@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         header {
-          padding-top: 20px; /* Adjust the padding as desired */
+          padding-top: 15px; /* Adjust the padding as desired */
         }
 
         .nav-item {
@@ -45,14 +45,16 @@
             </ul>
         </nav>
         
-
+        {% comment %}
         {% if site.github.is_project_page %}
         <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ site.github.repository_nwo }}</small></a></p>
         {% endif %}
+        {% endcomment %}
 
         {% if site.github.is_user_page %}
         <p class="view"><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p>
         {% endif %}
+        
         {% comment %}
         {% if site.show_downloads %}
         <ul class="downloads">
@@ -62,6 +64,7 @@
         </ul>
         {% endif %}
         {% endcomment %}
+
       </header>
       <section>
 
