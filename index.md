@@ -10,4 +10,4 @@ I completed my MS in Electrical Engineering at North Carolina State University i
 I am proficient in Python, C++, and ROS, and have a deep understanding of various algorithms and data structures. A list of my [publications](https://arunavanag591.github.io/about/publications/) and github repositories can be found [here](https://github.com/arunavanag591).To stay connected or learn more about my research, feel free to visit my [LinkedIn](https://www.linkedin.com/in/arunavanag/) profile. 
 
 ### Some Fun Projects
-1. [GPTalkTerminal](https://github.com/arunavanag591/GPTalkTerminal.git) : This is a command-line assistant implmentation using ChatGPT API
+1. [GPTalkTerminal](https://github.com/arunavanag591/GPTalkTerminal.git) : This is a command-line assistant implementation using ChatGPT API
