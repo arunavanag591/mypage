@@ -7,8 +7,9 @@ permalink: /publications/
 # Publications
 
 ## Journal Articles
+1. [Nag, A., & van Breugel, F. (2023).Odor source location can be predicted from a time-history of odor statistics for a large-scale outdoor plume. BioRxiv Preprint](https://www.biorxiv.org/content/10.1101/2023.07.20.549973v1)
 
-1. [Lingenfelter, B., Nag, A., & van Breugel, F. (2021). Insect inspired vision-based velocity estimation through spatial pooling of optic flow during linear motion. Bioinspiration & Biomimetics, 16(6), 066004](https://iopscience.iop.org/article/10.1088/1748-3190/ac1f7b/meta)
+2. [Lingenfelter, B., Nag, A., & van Breugel, F. (2021). Insect inspired vision-based velocity estimation through spatial pooling of optic flow during linear motion. Bioinspiration & Biomimetics, 16(6), 066004](https://iopscience.iop.org/article/10.1088/1748-3190/ac1f7b/meta)
 
 ## Conference Papers
 
