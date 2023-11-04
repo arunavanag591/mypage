@@ -2,3 +2,11 @@
 ---
 
 @import "jekyll-theme-minimal";
+
+.profile-pic {
+    border-radius: 50%;
+    width: 200px; /* Adjust as needed */
+    height: 200px; /* Adjust as needed */
+    object-fit: cover; /* This will ensure the image covers the area without stretching */
+  }
+  
