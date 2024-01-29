@@ -16,3 +16,4 @@ I am proficient in Python, C++, and ROS, and have a deep understanding of variou
 
 ### Some Fun Projects
 1. [GPTalkTerminal](https://github.com/arunavanag591/GPTalkTerminal.git) : This is a command-line assistant implementation using ChatGPT API
+2. [GeminiYoutubeSummarizer](https://github.com/arunavanag591/GeminiYoutubeSummarizer.git) : Summarizes a youtube video using Google's Gemini Pro LLM model
