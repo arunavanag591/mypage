@@ -6,4 +6,4 @@ permalink: /resume/
 
 ## My Resume
 
-<iframe src="arunava_resume.pdf" width="100%" height="600px"></iframe>
+<object data="arunava_resume.pdf" width="1000" height="1000" type='application/pdf'/>
