@@ -3,12 +3,15 @@ layout: default
 ---
 ## Ph.D. Candidate in Computer Science, University of Nevada, Reno, USA
 
-I am currently a 5th-year Ph.D. Comnputer Science student at the University of Nevada, Reno, working under [Dr. Floris van Breugel](https://www.florisvanbreugel.com/). My research leverages large real-world datasets, focusing on statistical modeling, machine learning, and deep learning methods to develop predictive models and estimators for dynamic systems. I am proficient in Python, C++, and various data analysis/MLOps tools. Key achievements during my PhD :
+I am currently a 5th-year Ph.D. Comnputer Science student at the University of Nevada, Reno, working under [Dr. Floris van Breugel](https://www.florisvanbreugel.com/). I am currently looking for full-time job or postdoctoral positions, in the field of LLMs, speech and audio, brain computer interfaces, computational biology.
+
+My research leverages large real-world datasets, focusing on statistical modeling, machine learning, and deep learning methods to develop predictive models and estimators for dynamic systems. I am proficient in Python, C++, and various data analysis/MLOps tools. Key achievements during my PhD :
 - Implemented statistical models and Kalman filtering techniques on real world large datasets (15 million rows), achieving 82% prediction accuracy for source localization in outdoor dynamic systems. [Paper](https://royalsocietypublishing.org/doi/full/10.1098/rsif.2024.0169).
 
 - Developed a data-driven simulator using Gaussian Process Regression and Bayesian optimization to predict spatio-temporal chemical occurrences. This simulator, fine-tuned with real-world statistics, serves as a testing platform for algorithm development, allowing artificial agents to experiment in a realistic and robust environment.
 
 A list of my [publications](https://arunavanag591.github.io/about/publications/) and github repositories can be found [here](https://github.com/arunavanag591)
+
 
 ### MS, Electrical Engineering (CV & Motion planning), North Carolina State University
 
@@ -23,10 +26,3 @@ To stay connected or learn more about my research, feel free to visit my [Linked
 1. [GPTalkTerminal](https://github.com/arunavanag591/GPTalkTerminal.git) : This is a command-line assistant implementation using ChatGPT API
 2. [GeminiYoutubeSummarizer](https://github.com/arunavanag591/GeminiYoutubeSummarizer.git) : Summarizes a youtube video using Google's Gemini Pro LLM model
 
-
-<a href="https://github.com/arunavanag591" target="_blank">
-  <i class="fab fa-github fa-2x"></i>
-</a>
-<a href="https://linkedin.com/in/arunavanag591" target="_blank">
-  <i class="fab fa-linkedin fa-2x"></i>
-</a>
