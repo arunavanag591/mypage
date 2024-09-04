@@ -21,25 +21,15 @@
         }
 
         .sidebar-icons {
-            margin-top: 20px; 
-        }
-
-        .sidebar-icons ul {
-            padding-left: 0;
-            list-style-type: none;
-        }
-
-        .sidebar-icons li {
+            margin-top: 20px;
             display: flex;
-            align-items: center;
-            margin-bottom: 10px;
-            font-size: 18px;
+            gap: 15px; /* Adjusts the space between icons */
         }
 
-        .sidebar-icons i {
-            margin-right: 10px;
-            font-size: 20px;
+        .sidebar-icons a {
+            text-decoration: none;
         }
+
     </style>
     {% seo %}
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
@@ -72,14 +62,17 @@
 
       <!-- Add Social Media and Contact Icons -->
       <div class="sidebar-icons">
-        <ul>
-          
-            <li><i class="fas fa-envelope"></i> <a href="mailto:arunavan@unr.edu">Email</a></li>
-            <li><i class="fab fa-github fa-2x"></i> <a href="https://github.com/arunavanag591" target="_blank">GitHub</a></li>
-            <li><i class="fab fa-linkedin fa-2x"></i> <a href="https://linkedin.com/in/arunavanag/" target="_blank">LinkedIn</a></li>
-        </ul>
+          <a href="mailto:arunavan@unr.edu">
+              <i class="fas fa-envelope"></i>
+          </a>
+          <a href="https://github.com/arunavanag591" target="_blank">
+              <i class="fab fa-github fa-2x"></i>
+          </a>
+          <a href="https://linkedin.com/in/arunavanag/" target="_blank">
+              <i class="fab fa-linkedin fa-2x"></i>
+          </a>
       </div>
-
+      
         {% comment %}
         {% if site.github.is_project_page %}
         <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ site.github.repository_nwo }}</small></a></p>
