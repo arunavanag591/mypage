@@ -23,12 +23,21 @@
         .sidebar-icons {
             margin-top: 20px;
             display: flex;
-            gap: 15px; /* Adjusts the space between icons */
+            gap: 15px;
         }
 
-        .sidebar-icons a {
-            text-decoration: none;
+        .sidebar-icons a i {
+            color: inherit; /* This keeps default color */
         }
+
+        .sidebar-icons a i.fab.fa-github {
+            color:black; /* Makes GitHub icon black */
+        }
+
+        .sidebar-icons a i.fas, .sidebar-icons a i.fab {
+            font-size: 2em; /* Ensures all icons are the same size */
+        }
+
 
     </style>
     {% seo %}
@@ -62,16 +71,17 @@
 
       <!-- Add Social Media and Contact Icons -->
       <div class="sidebar-icons">
-          <a href="mailto:arunavan@unr.edu">
-              <i class="fas fa-envelope"></i>
-          </a>
-          <a href="https://github.com/arunavanag591" target="_blank">
-              <i class="fab fa-github fa-2x"></i>
-          </a>
-          <a href="https://linkedin.com/in/arunavanag/" target="_blank">
-              <i class="fab fa-linkedin fa-2x"></i>
-          </a>
+        <a href="mailto:arunavan@unr.edu">
+            <i class="fas fa-envelope fa-2x"></i>
+        </a>
+        <a href="https://github.com/arunavanag591" target="_blank">
+            <i class="fab fa-github fa-2x"></i>
+        </a>
+        <a href="https://linkedin.com/in/arunavanag/" target="_blank">
+            <i class="fab fa-linkedin fa-2x"></i>
+        </a>
       </div>
+    
       
         {% comment %}
         {% if site.github.is_project_page %}
