@@ -3,8 +3,3 @@ logo: /assets/img/me.png
 description: Machine Learning, Computation Biology, Computer Vision, Robotics
 google_analytics:
 theme: jekyll-theme-minimal
-navigation:
-  - title: "Home"
-    url: /
-  - title: "Resume"
-    url: /resume/
