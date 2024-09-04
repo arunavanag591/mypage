@@ -26,3 +26,10 @@ To stay connected or learn more about my research, feel free to visit my [Linked
 1. [GPTalkTerminal](https://github.com/arunavanag591/GPTalkTerminal.git) : This is a command-line assistant implementation using ChatGPT API
 2. [GeminiYoutubeSummarizer](https://github.com/arunavanag591/GeminiYoutubeSummarizer.git) : Summarizes a youtube video using Google's Gemini Pro LLM model
 
+
+<a href="https://github.com/arunavanag591" target="_blank">
+  <i class="fab fa-github fa-2x"></i>
+</a>
+<a href="https://linkedin.com/in/arunavanag591" target="_blank">
+  <i class="fab fa-linkedin fa-2x"></i>
+</a>
