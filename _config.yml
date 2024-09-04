@@ -7,6 +7,7 @@ theme: jekyll-theme-minimal
 header_pages:
   - index.md
   - publications.md
-  
+
 social_links:
-  - { platform: linkedin, user_url: "https://www.linkedin.com/in/arunavanag/" }
+  - { platform: linkedin,          user_url: "https://www.linkedin.com/in/arunavanag" }
+  - { platform: github,            user_url: "https://github.com/arunavanag591" }
