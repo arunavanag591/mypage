@@ -21,4 +21,3 @@ permalink: /publications/
 1. [MS-Thesis, NCSU, "A Vision-Based Odometry Model for Adaptive Human-Robot Systems."](https://repository.lib.ncsu.edu/handle/1840.16/11399)
 
 
-[My Google Scholar](https://scholar.google.com/citations?user=veJS5XcAAAAJ&hl=en)
