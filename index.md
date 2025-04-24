@@ -3,7 +3,7 @@ layout: default
 ---
 ### Ph.D. in Computer Science, University of Nevada, Reno
 
-During my Ph.D. in Computer Science at the University of Nevada, Reno, I worked with [Dr. Floris van Breugel](https://www.florisvanbreugel.com/). My research leveraged large noisy real-world datasets, to develop predictive models using statistical analysis, machine learning and deep learning methods. I am proficient in Python, C++, and various data analysis/MLOps tools. During my PhD:
+During my Ph.D. in Computer Science at the University of Nevada, Reno, my research leveraged large noisy real-world datasets, to develop predictive models using statistical analysis, machine learning and deep learning methods. I am proficient in Python, C++, and various data analysis/MLOps tools. During my PhD:
 
 🦋 I developed and implemented statistical models and Kalman filtering techniques to enhance estimators for real- world dynamical systems on 15 million rows of real-world data from multiple sensors, resulting in an 82% prediction accuracy. [RSI, 2024](https://royalsocietypublishing.org/doi/full/10.1098/rsif.2024.0169)
 
