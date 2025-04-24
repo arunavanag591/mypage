@@ -23,28 +23,35 @@ body {
   line-height: 1.6 !important;
 }
 
-/* Increase heading and paragraph font sizes */
-h1 {
+/* Make main content headings larger */
+section h1 {
   font-size: 2.5em !important;
 }
 
-h2 {
+section h2 {
   font-size: 2em !important;
 }
 
-h3 {
+section h3 {
   font-size: 1.5em !important;
 }
 
-p {
-  font-size: 1.1em !important;
-  margin-bottom: 1.2em;
+/* Make the header name (Arunava Nag) smaller */
+header h1 {
+  font-size: 1.8em !important;
+  line-height: 1.2 !important;
 }
 
 /* Make the site description (interests) smaller */
 header p {
-  font-size: 0.8em !important;
+  font-size: 2.0em !important;
   line-height: 1.4 !important;
+}
+
+/* Regular paragraph text */
+p {
+  font-size: 1.1em !important;
+  margin-bottom: 1.2em;
 }
 
 /* Make sure the media queries maintain proper responsive layout */
