@@ -9,7 +9,7 @@ I completed my Ph.D. in Computer Science at the University of Nevada, Reno, wher
 
 🎮 I built a realistic odor simulator, COSMOS (Configurable Odor Simulation Model over Scalable Spaces), that provides an odor experience similar to an outdoor environment using data-driven probabilistic methods for whiff simulation and mathematical tools like logistic transform and autoregressive functions for smooth time series evolution. COSMOS is built with desire to provide a test bench for plume tracing algorithm development. 
 
-🛩️ I integrated COSMOS with Gazebo to further simulate the odor tracking challenges such as wind and gravity using a physics enabled environment in UAV and test with a velocity controlled surge and cast algorithm. It was further translated into an actual UAV sysem.
+🛩️ I integrated COSMOS with a physics enabled robotic simulator-Gazebo to further simulate the odor tracking challenges such as wind and gravity with an UAV and tested the simulation with a velocity controlled surge and cast algorithm. It was further translated into an actual UAV sysem.
 
 A list of my [publications](https://arunavanag591.github.io/mypage/publications/) and github repositories can be found [here](https://github.com/arunavanag591).
 
@@ -17,7 +17,7 @@ A list of my [publications](https://arunavanag591.github.io/mypage/publications/
 I worked as a Senior Research Engineer at ROS-Industrial Asia Pacific for 3 years, where I developed industrial applications using machine learning, robotics, autonomous navigation, computer vision and virtual reality. I also worked as an instructor for Robot Operating System while my stint at ROS-Industrial Asia Pacific. I led projects integrating virtual reality with real world robot and improved robot operator learning efficiency by 85%. 
 
 ### MS, Electrical Engineering (CV & Motion planning), North Carolina State University
-I completed my MS in Electrical Engineering at North Carolina State University in 2016. My [thesis](https://repository.lib.ncsu.edu/handle/1840.16/11399) involved working with vision guided collaborative robotics for manufacturing appplications where I built an assembly line employed with multiple artificial agents/robots who performed complex assembly of small parts using point cloud and computer vision techniques. 
+I received my MS in Electrical Engineering at North Carolina State University in 2016. My [thesis](https://repository.lib.ncsu.edu/handle/1840.16/11399) involved working with vision guided collaborative robotics for manufacturing appplications where I built an assembly line employed with multiple artificial agents/robots who performed complex assembly of small parts using point cloud and computer vision techniques. 
 
 
 ### Projects
