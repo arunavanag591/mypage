@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-## Ph.D. Candidate in Computer Science, University of Nevada, Reno
+### Ph.D. Candidate in Computer Science, University of Nevada, Reno
 
 I am currently a 5th-year Ph.D. Comnputer Science student at the University of Nevada, Reno, working under [Dr. Floris van Breugel](https://www.florisvanbreugel.com/). I am currently looking for full-time job or postdoctoral positions, in the field of LLMs, brain computer interfaces, computational biology.
 
