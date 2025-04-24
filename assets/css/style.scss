@@ -3,18 +3,16 @@
 
 @import "jekyll-theme-minimal";
 
-/* Your CSS styles here */
-
-/* Override the default theme's width settings */
+/* Keep the wrapper wider */
 .wrapper {
-  max-width: 1000px !important; /* Use !important to override theme defaults */
+  max-width: 1000px !important;
   width: 1000px !important;
   margin: 0 auto;
 }
 
 /* Adjust section width to use more of the available space */
 section {
-  width: calc(100% - 320px) !important; /* Adjust based on your sidebar width */
+  width: calc(100% - 320px) !important;
   float: right;
   padding-bottom: 50px;
 }
@@ -41,6 +39,12 @@ h3 {
 p {
   font-size: 1.1em !important;
   margin-bottom: 1.2em;
+}
+
+/* Make the site description (interests) smaller */
+header p {
+  font-size: 0.8em !important;
+  line-height: 1.4 !important;
 }
 
 /* Make sure the media queries maintain proper responsive layout */
