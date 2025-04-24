@@ -3,7 +3,7 @@ layout: default
 ---
 ### Ph.D. in Computer Science, University of Nevada, Reno
 
-I completed my Ph.D. in Computer Science at the University of Nevada, Reno, where I worked under [Dr. Floris van Breugel](https://www.florisvanbreugel.com/). My research leverages large noisy real-world datasets, focusing on statistical modeling, machine learning, and deep learning methods to develop predictive models and estimators for dynamic systems. I am proficient in Python, C++, and various data analysis/MLOps tools. Key achievements during my PhD:
+During my Ph.D. in Computer Science at the University of Nevada, Reno, I worked with [Dr. Floris van Breugel](https://www.florisvanbreugel.com/). My research leveraged large noisy real-world datasets, to develop predictive models using statistical analysis, machine learning and deep learning methods. I am proficient in Python, C++, and various data analysis/MLOps tools. During my PhD:
 
 🦋 I developed and implemented statistical models and Kalman filtering techniques to enhance estimators for real- world dynamical systems on 15 million rows of real-world data from multiple sensors, resulting in an 82% prediction accuracy. [RSI, 2024](https://royalsocietypublishing.org/doi/full/10.1098/rsif.2024.0169)
 
@@ -14,11 +14,10 @@ I completed my Ph.D. in Computer Science at the University of Nevada, Reno, wher
 A list of my [publications](https://arunavanag591.github.io/mypage/publications/) and github repositories can be found [here](https://github.com/arunavanag591).
 
 ### Work Experience: 
-I worked as a Senior Research Engineer at ROS-Industrial Asia Pacific for 3 years, where I developed industrial applications using machine learning, robotics, autonomous navigation, computer vision and virtual reality. I also worked as an instructor for Robot Operating System while my stint at ROS-Industrial Asia Pacific. I led projects integrating virtual reality with real world robot and improved robot operator learning efficiency by 85%. 
+🤖 I worked as a Senior Research Engineer at ROS-Industrial Asia Pacific for three years, where I developed industrial applications leveraging machine learning, robotics, autonomous navigation, computer vision, and virtual reality. During my tenure at ROS-Industrial Asia Pacific, I also served as an instructor for the Robot Operating System. Additionally, I led projects that integrated virtual reality with real-world robotics, significantly enhancing robot operator learning efficiency by 85%.
 
 ### MS, Electrical Engineering (CV & Motion planning), North Carolina State University
-I received my MS in Electrical Engineering at North Carolina State University in 2016. My [thesis](https://repository.lib.ncsu.edu/handle/1840.16/11399) involved working with vision guided collaborative robotics for manufacturing appplications where I built an assembly line employed with multiple artificial agents/robots who performed complex assembly of small parts using point cloud and computer vision techniques. 
-
+🦾 🔧 In 2016, I received my MS in Electrical Engineering at North Carolina State University. My thesis focused on 📷 vision-guided collaborative robotics for manufacturing applications. Specifically, I developed an assembly line featuring multiple artificial agents and robots capable of performing complex assembly tasks of small components using point cloud processing and computer vision techniques.
 
 ### Projects
 1. [Single cell CAR T patient response modeling](https://github.com/arunavanag591/single-cell-car-t-response-modeling.git) : Modeled patient response for scRNA CAR T therapy using scanpy tools, random forests and CNNs.
