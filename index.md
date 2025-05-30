@@ -8,7 +8,9 @@ During my Ph.D. in Computer Science at the University of Nevada, Reno, my resear
 🦋 I developed and implemented statistical models and Kalman filtering techniques to enhance estimators for real- world dynamical systems on 15 million rows of real-world data from multiple sensors, resulting in an 82% prediction accuracy. [RSI, 2024](https://royalsocietypublishing.org/doi/full/10.1098/rsif.2024.0169)
 
 🎮 I built a realistic odor simulator, COSMOS (Configurable Odor Simulation Model over Scalable Spaces), that provides an odor experience similar to an outdoor environment using data-driven probabilistic methods for whiff simulation and mathematical tools like logistic transform and autoregressive functions for smooth time series evolution. COSMOS is built with desire to provide a test bench for plume tracing algorithm development. [arXiv, 2025](https://arxiv.org/abs/2505.22436)
+
 ![COSMOS](assets/img/algorithm.jpg)
+
 
 🛩️ I also integrated COSMOS with a physics enabled robotic simulator-Gazebo to further simulate the odor tracking challenges such as wind and gravity with an UAV and tested the simulation with a velocity controlled surge and cast algorithm. It was further translated into an actual UAV sysem.
 
