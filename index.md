@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+🩺 I am a Postdoctoral scholar in University of Chicago. I analyze lupus data, mainly very large and high resolution codex images and develop machine learning techniques for better cell phenotyping and mapping from human to mouse renal cells. 
 
 ### Ph.D., Computer Science, University of Nevada, Reno
 During my Ph.D. in Computer Science at the University of Nevada, Reno, my research leveraged large noisy real-world datasets, to develop predictive models using statistical analysis, machine learning and deep learning methods. I am proficient in Python, C++, and various data analysis/MLOps tools. During my PhD:
