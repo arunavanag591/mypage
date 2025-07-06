@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-🩺 I am currently a Postdoctoral scholar at University of Chicago. I work with computational microscopy and image data to develop better segmentation and annotation fidelity and drive new insights for lupus in kidney cells. 
+🩺 I’m a postdoctoral fellow at the University of Chicago, where I apply computational microscopy and machine-learning methods to high-resolution CODEX images of lupus-affected kidney tissue. My work focuses on advanced cell segmentation and phenotyping pipelines, and map findings from human renal cells to mouse to uncover novel mechanisms of lupus pathogenesis in the kidney.
 
 ### Ph.D., Computer Science, University of Nevada, Reno
 During my Ph.D. in Computer Science at the University of Nevada, Reno, my research leveraged large noisy real-world datasets, to develop predictive models using statistical analysis, machine learning and deep learning methods. I am proficient in Python, C++, and various data analysis/MLOps tools. During my PhD:
