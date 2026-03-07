@@ -4,43 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        header {
-          padding-top: 15px;
-        }
-        .nav-item {
-          font-size: 20px;
-        }
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
-        nav li {
-            display: inline;
-        }
-
-        .sidebar-icons {
-            margin-top: 20px;
-            display: flex;
-            gap: 15px;
-        }
-
-        .sidebar-icons a i {
-            color: inherit; /* This keeps default color */
-            font-size: 1.8em
-        }
-
-        .sidebar-icons a i.fab.fa-github, .sidebar-icons a i.ai-google-scholar {
-            color:black; /* Makes GitHub icon black */
-        }
-
-        .sidebar-icons a i.fas, .sidebar-icons a i.fab {
-            font-size: 1.8em; /* Ensures all icons are the same size */
-        }
-
-
-    </style>
     {% seo %}
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
     <!--[if lt IE 9]>
@@ -48,68 +11,77 @@
     <![endif]-->
     {% include head-custom.html %}
   </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
+  <body class="{{ page.body_class | default: 'page-standard' }}">
+    <div class="page-backdrop"></div>
+    <div class="site-shell">
+      <aside class="site-sidebar">
+        <a class="brand-lockup" href="{{ "/" | absolute_url }}">
+          <span class="brand-kicker">Computational Spatial Biology</span>
+          <h1>{{ site.title | default: site.github.repository_name }}</h1>
+        </a>
 
         {% if site.logo %}
-          <img src="{{site.logo | relative_url}}" alt="Logo" />
+          <img class="profile-photo" src="{{site.logo | relative_url}}" alt="{{ site.title }} profile photo" />
         {% endif %}
 
-        <p>{{ site.description | default: site.github.project_tagline }}</p>
+        <p class="sidebar-summary">{{ site.description | default: site.github.project_tagline }}</p>
 
-        <nav>
-            <ul>
-                <a href="{{ site.baseurl }}/publications/" class="nav-item">Publications</a>
-            </ul>
+        <div class="sidebar-badges">
+          <span>CODEX</span>
+          <span>Spatial Omics</span>
+          <span>Immune Microenvironment</span>
+        </div>
+
+        <nav class="site-nav" aria-label="Primary">
+          <a href="{{ "/" | absolute_url }}">Home</a>
+          <a href="{{ site.baseurl }}/publications/">Publications</a>
+          <a href="{{ site.baseurl }}/resume/">CV</a>
         </nav>
-        <nav>
-          <ul>
-              <a href="{{ site.baseurl }}/resume/" class="nav-item">CV</a>
-          </ul>
-      </nav>
 
-      <!-- Add Social Media and Contact Icons -->
-      <div class="sidebar-icons">
-        <a href="mailto:arunavan@unr.edu">
-            <i class="fas fa-envelope fa-2x"></i>
-        </a>
-        <a href="https://github.com/arunavanag591" target="_blank">
-            <i class="fab fa-github fa-2x"></i>
-        </a>
-        <a href="https://linkedin.com/in/arunavanag/" target="_blank">
-            <i class="fab fa-linkedin fa-2x"></i>
-        </a>
-        <a href="https://scholar.google.com/citations?user=veJS5XcAAAAJ" target="_blank">
-          <i class="ai ai-google-scholar fa-2x"></i>
-        </a>
-      </div>
-    
-      
-        {% comment %}
-        {% if site.github.is_project_page %}
-        <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ site.github.repository_nwo }}</small></a></p>
-        {% endif %}
-        {% endcomment %}
+        <div class="sidebar-icons">
+          <a href="mailto:arunavan@uchicago.edu" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a href="https://github.com/arunavanag591" target="_blank" rel="noreferrer" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://linkedin.com/in/arunavanag/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://scholar.google.com/citations?user=veJS5XcAAAAJ" target="_blank" rel="noreferrer" aria-label="Google Scholar">
+            <i class="ai ai-google-scholar"></i>
+          </a>
+        </div>
+      </aside>
 
-        {% if site.github.is_user_page %}
-        <p class="view"><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p>
-        {% endif %}
-        
-      </header>
-      <section>
-
-      {{ content }}
-
-      </section>
-      <!--<footer>
-        {% if site.github.is_project_page %}
-        <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
-        {% endif %}
-        
-      </footer> -->
+      <main class="site-main">
+        {{ content }}
+      </main>
     </div>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+    <script>
+      document.querySelectorAll("[data-reveal]").forEach(function (element) {
+        element.classList.add("reveal-ready");
+      });
+
+      if ("IntersectionObserver" in window) {
+        var revealObserver = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("is-visible");
+              revealObserver.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.12 });
+
+        document.querySelectorAll("[data-reveal]").forEach(function (element) {
+          revealObserver.observe(element);
+        });
+      } else {
+        document.querySelectorAll("[data-reveal]").forEach(function (element) {
+          element.classList.add("is-visible");
+        });
+      }
+    </script>
   </body>
 </html>

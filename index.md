@@ -1,32 +1,179 @@
 ---
 layout: default
+title: Arunava Nag
+body_class: page-home
 ---
-🩺 I’m a postdoctoral fellow at the University of Chicago, where I apply computational microscopy and machine-learning methods to high-resolution CODEX images of lupus-affected kidney tissue. My work focuses on advanced cell segmentation and phenotyping pipelines, and map findings from human renal cells to mouse to uncover novel mechanisms of lupus pathogenesis in the kidney.
+<section class="hero-panel" data-reveal>
+  <div class="hero-grid">
+    <div>
+      <span class="eyebrow">Postdoctoral Scholar · University of Chicago</span>
+      <h1 class="hero-title">Mapping tissue architecture from multiplex imaging into measurable immune biology.</h1>
+      <p class="hero-lead">
+        I am a postdoctoral scholar at the University of Chicago specializing in spatial omics and high-dimensional multiplex imaging data. My work combines quantitative modeling, cell segmentation, phenotyping, spatial network analysis, and inflammation trajectory modeling to uncover spatial biomarkers and disease-associated tissue states.
+      </p>
+      <p class="hero-lead">
+        I am particularly interested in translating spatial data into mechanistic insight and therapeutic hypotheses in immunology and inflammatory disease, building on a Ph.D. focused on predictive modeling with large noisy real-world datasets using statistics, machine learning, and deep learning.
+      </p>
+      <div class="hero-actions">
+        <a class="button-link" href="{{ site.baseurl }}/publications/">View Publications</a>
+        <a class="button-link secondary" href="{{ site.baseurl }}/resume/">Open CV</a>
+      </div>
+      <div class="hero-tags">
+        <span>Spatial Omics</span>
+        <span>Multiplex Imaging (CODEX)</span>
+        <span>Cell Neighborhoods</span>
+        <span>Immune Microenvironment</span>
+      </div>
+    </div>
+    <aside class="hero-card">
+      <h3>Current research focus</h3>
+      <ul>
+        <li>Scalable analysis pipelines for segmentation, phenotyping, and QC of multiplex imaging data.</li>
+        <li>Quantitative modeling of tissue architecture, cell neighborhoods, and inflammatory organization.</li>
+        <li>Cross-species spatial analysis to connect tissue phenotypes with mechanism and therapy.</li>
+      </ul>
+    </aside>
+  </div>
 
-### Ph.D., Computer Science, University of Nevada, Reno
-During my Ph.D. in Computer Science at the University of Nevada, Reno, my research leveraged large noisy real-world datasets, to develop predictive models using statistical analysis, machine learning and deep learning methods. I am proficient in Python, C++, and various data analysis/MLOps tools. During my PhD:
+  <div class="stat-grid">
+    <article class="stat-card" data-reveal>
+      <h3>UChicago</h3>
+      <p>Postdoctoral research at the intersection of computational microscopy, immunology, and spatial biology.</p>
+    </article>
+    <article class="stat-card" data-reveal>
+      <h3>15M+</h3>
+      <p>Rows of noisy real-world data used during Ph.D. work on predictive modeling and dynamical estimation.</p>
+    </article>
+    <article class="stat-card" data-reveal>
+      <h3>ML + Theory</h3>
+      <p>Statistical modeling, machine learning, and simulation-first thinking across biology and robotics.</p>
+    </article>
+  </div>
+</section>
 
-🦋 I developed and implemented statistical models and Kalman filtering techniques to enhance estimators for real- world dynamical systems on 15 million rows of real-world data from multiple sensors, resulting in an 82% prediction accuracy. [RSI, 2024](https://royalsocietypublishing.org/doi/full/10.1098/rsif.2024.0169)
+<hr class="section-divider">
 
-🎮 I built a realistic odor simulator, COSMOS (Configurable Odor Simulation Model over Scalable Spaces), that provides an odor experience similar to an outdoor environment using data-driven probabilistic methods for whiff simulation and mathematical tools like logistic transform and autoregressive functions for smooth time series evolution. COSMOS is built with desire to provide a test bench for plume tracing algorithm development. [arXiv, 2025](https://arxiv.org/abs/2505.22436)
+<section data-reveal>
+  <div class="section-heading">
+    <h2>Research directions</h2>
+    <p>Work that spans biological discovery, data engineering, and quantitative modeling.</p>
+  </div>
+  <div class="feature-grid">
+    <article class="section-card">
+      <span class="meta-pill">Spatial biology</span>
+      <h3>High-dimensional tissue analysis</h3>
+      <p>I build robust workflows for cell segmentation, phenotyping, and spatial neighborhood analysis in high-resolution CODEX and multiplex imaging datasets.</p>
+    </article>
+    <article class="section-card">
+      <span class="meta-pill">Translational modeling</span>
+      <h3>Biomarkers to mechanism</h3>
+      <p>My goal is to move from descriptive spatial maps to interpretable signals that support mechanistic hypotheses and disease stratification.</p>
+    </article>
+    <article class="section-card">
+      <span class="meta-pill">Methods</span>
+      <h3>Scalable computational pipelines</h3>
+      <p>I work across Python-based analysis, statistical learning, network modeling, and reproducible workflow design for complex experimental datasets.</p>
+    </article>
+    <article class="section-card">
+      <span class="meta-pill">Background</span>
+      <h3>From robotics to tissue systems</h3>
+      <p>Earlier work in robotics, sensing, and simulation sharpened a practical approach to noisy data, model validation, and tool building.</p>
+    </article>
+  </div>
+</section>
 
-![COSMOS](assets/img/algorithm.jpg)
+<hr class="section-divider">
 
+<section data-reveal>
+  <div class="section-heading">
+    <h2>Selected work</h2>
+    <p>A mix of current spatial biology work and earlier modeling research.</p>
+  </div>
+  <div class="feature-grid">
+    <article class="section-card">
+      <span class="meta-pill">Current</span>
+      <h3>Spatial omics in inflammatory tissue</h3>
+      <p>Quantitative analysis of tissue architecture, immune microenvironment organization, and inflammation trajectories in lupus and related disease contexts.</p>
+    </article>
+    <article class="section-card">
+      <span class="meta-pill">Publication</span>
+      <h3>COSMOS simulator</h3>
+      <p>A data-driven probabilistic simulator for chemical plumes across spatial scales, designed as a test bed for plume tracing algorithms and embodied sensing research.</p>
+      <a href="https://ieeexplore.ieee.org/abstract/document/11223626" class="project-link">IEEE publication</a>
+    </article>
+    <article class="section-card">
+      <span class="meta-pill">Publication</span>
+      <h3>Prediction from real-world odor statistics</h3>
+      <p>Statistical models and Kalman filtering approaches for large-scale outdoor plume data, improving prediction accuracy from noisy sensor measurements.</p>
+      <a href="https://royalsocietypublishing.org/doi/full/10.1098/rsif.2024.0169" class="project-link">Journal of the Royal Society Interface</a>
+    </article>
+    <article class="section-card">
+      <span class="meta-pill">Simulation</span>
+      <h3>UAV plume tracking in Gazebo</h3>
+      <p>COSMOS was integrated with a physics-enabled robotics simulator to test odor tracking behavior under wind, gravity, and motion-control constraints.</p>
+    </article>
+  </div>
+</section>
 
-🛩️ I also integrated COSMOS with a physics enabled robotic simulator-Gazebo to further simulate the odor tracking challenges such as wind and gravity with an UAV and tested the simulation with a velocity controlled surge and cast algorithm. It was further translated into an actual UAV sysem.
+<hr class="section-divider">
 
-A list of my [publications](https://arunavanag591.github.io/mypage/publications/) and github repositories can be found [here](https://github.com/arunavanag591).
+<section data-reveal>
+  <div class="section-heading">
+    <h2>Experience</h2>
+    <p>A short path through the research and engineering work that shaped this site.</p>
+  </div>
+  <div class="experience-list">
+    <article class="experience-item">
+      <span class="timeline-label">Now</span>
+      <h3>Postdoctoral Scholar, University of Chicago</h3>
+      <p>Computational spatial biology focused on multiplex imaging, tissue architecture, cell neighborhoods, and immune microenvironment modeling.</p>
+    </article>
+    <article class="experience-item">
+      <span class="timeline-label">Ph.D.</span>
+      <h3>Computer Science, University of Nevada, Reno</h3>
+      <p>Developed predictive models from large noisy real-world datasets using statistical analysis, machine learning, deep learning, and physically grounded simulation.</p>
+    </article>
+    <article class="experience-item">
+      <span class="timeline-label">Industry</span>
+      <h3>Senior Research Engineer, ROS-Industrial Asia Pacific</h3>
+      <p>Built industrial robotics applications spanning computer vision, autonomous navigation, machine learning, and virtual reality-enabled training systems.</p>
+    </article>
+    <article class="experience-item">
+      <span class="timeline-label">M.S.</span>
+      <h3>Electrical Engineering, North Carolina State University</h3>
+      <p>Worked on vision-guided collaborative robotics and motion planning for manufacturing systems using point cloud processing and computer vision.</p>
+    </article>
+  </div>
+</section>
 
-### Senior Research Engineer, ROS-Industrial Asia Pacific, Singapore
-🤖 I worked as a Senior Research Engineer at ROS-Industrial Asia Pacific for three years, where I developed industrial applications leveraging machine learning, robotics, autonomous navigation, computer vision, and virtual reality. During my tenure at ROS-Industrial Asia Pacific, I also served as an instructor for the Robot Operating System. Additionally, I led projects that integrated virtual reality with real-world robotics, significantly enhancing robot operator learning efficiency by 85%.
+<hr class="section-divider">
 
-### MS, Electrical Engineering (CV & Motion planning), North Carolina State University
-🦾 🔧 In 2016, I received my MS in Electrical Engineering at North Carolina State University. My thesis focused on 📷 vision-guided collaborative robotics for manufacturing applications. Specifically, I developed an assembly line featuring multiple artificial agents and robots capable of performing complex assembly tasks of small components using point cloud processing and computer vision techniques.
-
-### Projects
-1. [COSMOS](https://github.com/arunavanag591/COSMOS) : A data-driven probabilistic time series simulator for chemical plumes across spatial scales.
-2. [Single cell CAR T patient response modeling](https://github.com/arunavanag591/single-cell-car-t-response-modeling.git) : Modeled patient response for scRNA CAR T therapy using scanpy tools, random forests and CNNs.
-3. [GPTalkTerminal](https://github.com/arunavanag591/GPTalkTerminal.git) : This is a command-line assistant implementation using ChatGPT API
-4. [GeminiYoutubeSummarizer](https://github.com/arunavanag591/GeminiYoutubeSummarizer.git) : Summarizes a youtube video using Google's Gemini Pro LLM model
-
+<section data-reveal>
+  <div class="section-heading">
+    <h2>Projects</h2>
+    <p>Selected repositories and applied research tooling.</p>
+  </div>
+  <div class="project-grid">
+    <article class="project-card">
+      <h3>COSMOS</h3>
+      <p>A probabilistic time-series simulator for chemical plumes across spatial scales.</p>
+      <a href="https://github.com/arunavanag591/COSMOS" class="project-link">Open repository</a>
+    </article>
+    <article class="project-card">
+      <h3>Single-cell CAR T response modeling</h3>
+      <p>Patient response modeling with Scanpy workflows, random forests, and convolutional neural networks.</p>
+      <a href="https://github.com/arunavanag591/single-cell-car-t-response-modeling.git" class="project-link">Open repository</a>
+    </article>
+    <article class="project-card">
+      <h3>GPTalkTerminal</h3>
+      <p>A command-line assistant interface built around the ChatGPT API.</p>
+      <a href="https://github.com/arunavanag591/GPTalkTerminal.git" class="project-link">Open repository</a>
+    </article>
+    <article class="project-card">
+      <h3>Gemini YouTube Summarizer</h3>
+      <p>A YouTube summarization tool powered by Google Gemini models.</p>
+      <a href="https://github.com/arunavanag591/GeminiYoutubeSummarizer.git" class="project-link">Open repository</a>
+    </article>
+  </div>
+</section>
 

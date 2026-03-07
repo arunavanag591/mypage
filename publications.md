@@ -2,11 +2,12 @@
 layout: default
 title: Publications
 permalink: /publications/
+body_class: page-standard
 ---
 
 ## Publications
 
-1. [Nag, A., & van Breugel, F. (2025). "COSMOS: A Data-Driven Probabilistic Time Series simulator for Chemical Plumes across Spatial Scales."](https://arxiv.org/abs/2505.22436)
+1. [Nag, A., & van Breugel, F. (2025). "COSMOS: A Data-Driven Probabilistic Time Series simulator for Chemical Plumes across Spatial Scales."](https://ieeexplore.ieee.org/abstract/document/11223626)
 
 
 2. [Nag, A., & van Breugel, F. (2023). "Odor source location can be predicted from a time-history of odor statistics for a large-scale outdoor plume."](https://royalsocietypublishing.org/doi/full/10.1098/rsif.2024.0169)
@@ -20,5 +21,4 @@ permalink: /publications/
 1. [Ph.D.-Thesis, UNR, "The Invisible Landscape: Statistical Characterization and Simulation of Large-Scale Outdoor Odor Plumes."](https://shorturl.at/JU010)
 
 2. [MS-Thesis, NCSU, "A Vision-Based Odometry Model for Adaptive Human-Robot Systems."](https://repository.lib.ncsu.edu/handle/1840.16/11399)
-
 

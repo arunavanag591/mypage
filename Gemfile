@@ -4,4 +4,5 @@ source "https://rubygems.org"
 
 gemspec
 
-gem 'jemoji'
+gem 'ffi', '< 1.17'
+gem 'jekyll-sass-converter', '< 3.0'

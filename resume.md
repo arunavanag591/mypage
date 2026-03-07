@@ -1,13 +1,12 @@
 ---
-layout: single
+layout: default
 title: "Curriculum Vitae"
 sitemap: false
 permalink: /resume/
-author_profile: TRUE
-header: 
+body_class: page-standard
 ---
 
+## Curriculum Vitae
 
-<iframe src="https://drive.google.com/file/d/1BT4eewXo_28rMHoL2JbteReC_9Vmwcok/preview" width="100%" height="100%" style="border: none; position: fixed; top: 0; left: 0; bottom: 0; right: 0;" allow="autoplay"></iframe>
-
+<iframe src="https://drive.google.com/file/d/1BT4eewXo_28rMHoL2JbteReC_9Vmwcok/preview" title="Curriculum Vitae" allow="autoplay"></iframe>
 
