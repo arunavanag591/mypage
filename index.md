@@ -4,50 +4,20 @@ title: Arunava Nag
 body_class: page-home
 ---
 <section class="hero-panel" data-reveal>
-  <div class="hero-grid">
-    <div>
-      <span class="eyebrow">Postdoctoral Scholar · University of Chicago</span>
-      <h1 class="hero-title">Mapping tissue architecture from multiplex imaging into measurable immune biology.</h1>
-      <p class="hero-lead">
-        I am a postdoctoral scholar at the University of Chicago specializing in spatial omics and high-dimensional multiplex imaging data. My work combines quantitative modeling, cell segmentation, phenotyping, spatial network analysis, and inflammation trajectory modeling to uncover spatial biomarkers and disease-associated tissue states.
-      </p>
-      <p class="hero-lead">
-        I am particularly interested in translating spatial data into mechanistic insight and therapeutic hypotheses in immunology and inflammatory disease, building on a Ph.D. focused on predictive modeling with large noisy real-world datasets using statistics, machine learning, and deep learning.
-      </p>
-      <div class="hero-actions">
-        <a class="button-link" href="{{ site.baseurl }}/publications/">View Publications</a>
-        <a class="button-link secondary" href="{{ site.baseurl }}/resume/">Open CV</a>
-      </div>
-      <div class="hero-tags">
-        <span>Spatial Omics</span>
-        <span>Multiplex Imaging (CODEX)</span>
-        <span>Cell Neighborhoods</span>
-        <span>Immune Microenvironment</span>
-      </div>
-    </div>
-    <aside class="hero-card">
-      <h3>Current research focus</h3>
-      <ul>
-        <li>Scalable analysis pipelines for segmentation, phenotyping, and QC of multiplex imaging data.</li>
-        <li>Quantitative modeling of tissue architecture, cell neighborhoods, and inflammatory organization.</li>
-        <li>Cross-species spatial analysis to connect tissue phenotypes with mechanism and therapy.</li>
-      </ul>
-    </aside>
-  </div>
-
-  <div class="stat-grid">
-    <article class="stat-card" data-reveal>
-      <h3>UChicago</h3>
-      <p>Postdoctoral research at the intersection of computational microscopy, immunology, and spatial biology.</p>
-    </article>
-    <article class="stat-card" data-reveal>
-      <h3>15M+</h3>
-      <p>Rows of noisy real-world data used during Ph.D. work on predictive modeling and dynamical estimation.</p>
-    </article>
-    <article class="stat-card" data-reveal>
-      <h3>ML + Theory</h3>
-      <p>Statistical modeling, machine learning, and simulation-first thinking across biology and robotics.</p>
-    </article>
+  <span class="eyebrow">Postdoctoral Scholar · University of Chicago</span>
+  <h2 class="hero-title">Computational spatial biology, multiplex imaging, and quantitative tissue modeling.</h2>
+  <p class="hero-lead">
+    I am a postdoctoral scholar at the University of Chicago specializing in spatial omics and high-dimensional multiplex imaging data. My work focuses on quantitative modeling of tissue architecture, cell neighborhoods, and immune microenvironment organization.
+  </p>
+  <p class="hero-lead">
+    I build scalable analysis pipelines for cell segmentation, phenotyping, spatial network modeling, and inflammation trajectory analysis to uncover spatial biomarkers and disease-associated tissue states.
+  </p>
+  <p class="hero-lead">
+    I am particularly interested in translating spatial data into mechanistic insights and therapeutic hypotheses in immunology and inflammatory disease. My Ph.D. research leveraged large noisy real-world datasets to develop predictive models using statistical analysis, machine learning, and deep learning methods.
+  </p>
+  <div class="hero-actions">
+    <a class="button-link" href="{{ site.baseurl }}/publications/">View Publications</a>
+    <a class="button-link secondary" href="{{ site.baseurl }}/resume/">Open CV</a>
   </div>
 </section>
 
@@ -58,28 +28,14 @@ body_class: page-home
     <h2>Research directions</h2>
     <p>Work that spans biological discovery, data engineering, and quantitative modeling.</p>
   </div>
-  <div class="feature-grid">
-    <article class="section-card">
-      <span class="meta-pill">Spatial biology</span>
-      <h3>High-dimensional tissue analysis</h3>
-      <p>I build robust workflows for cell segmentation, phenotyping, and spatial neighborhood analysis in high-resolution CODEX and multiplex imaging datasets.</p>
-    </article>
-    <article class="section-card">
-      <span class="meta-pill">Translational modeling</span>
-      <h3>Biomarkers to mechanism</h3>
-      <p>My goal is to move from descriptive spatial maps to interpretable signals that support mechanistic hypotheses and disease stratification.</p>
-    </article>
-    <article class="section-card">
-      <span class="meta-pill">Methods</span>
-      <h3>Scalable computational pipelines</h3>
-      <p>I work across Python-based analysis, statistical learning, network modeling, and reproducible workflow design for complex experimental datasets.</p>
-    </article>
-    <article class="section-card">
-      <span class="meta-pill">Background</span>
-      <h3>From robotics to tissue systems</h3>
-      <p>Earlier work in robotics, sensing, and simulation sharpened a practical approach to noisy data, model validation, and tool building.</p>
-    </article>
-  </div>
+  <article class="section-card">
+    <ul>
+      <li>Scalable analysis pipelines for segmentation, phenotyping, and quality control of multiplex imaging data.</li>
+      <li>Quantitative modeling of tissue architecture, cell neighborhoods, and inflammatory organization.</li>
+      <li>Cross-species spatial analysis to connect tissue phenotypes with mechanism and therapy.</li>
+      <li>Reproducible computational workflows spanning statistical learning, network modeling, and biological interpretation.</li>
+    </ul>
+  </article>
 </section>
 
 <hr class="section-divider">
@@ -113,6 +69,10 @@ body_class: page-home
       <p>COSMOS was integrated with a physics-enabled robotics simulator to test odor tracking behavior under wind, gravity, and motion-control constraints.</p>
     </article>
   </div>
+  <article class="section-card project-visual">
+    <h3>COSMOS overview</h3>
+    <img src="{{ '/assets/img/algorithm.jpg' | relative_url }}" alt="COSMOS simulation overview diagram">
+  </article>
 </section>
 
 <hr class="section-divider">
@@ -176,4 +136,3 @@ body_class: page-home
     </article>
   </div>
 </section>
-
