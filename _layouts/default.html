@@ -17,6 +17,7 @@
       <aside class="site-sidebar">
         <a class="brand-lockup" href="{{ "/" | absolute_url }}">
           <h1>{{ site.title | default: site.github.repository_name }}</h1>
+          <span class="brand-kicker">Postdoctoral Scholar at UChicago</span>
         </a>
 
         {% if site.logo %}
@@ -37,8 +38,6 @@
             <i class="ai ai-google-scholar"></i>
           </a>
         </div>
-
-        <p class="sidebar-summary">{{ site.description | default: site.github.project_tagline }}</p>
 
         <div class="sidebar-badges">
           <span>CODEX</span>
