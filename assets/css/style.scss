@@ -59,8 +59,7 @@ body {
 }
 
 .site-sidebar {
-  position: sticky;
-  top: 24px;
+  position: static;
   align-self: start;
   padding: 28px;
   border-radius: 28px;
@@ -197,14 +196,21 @@ body {
   letter-spacing: -0.03em;
 }
 
+.site-main section {
+  width: auto;
+  float: none;
+  padding-bottom: 0;
+  margin: 0;
+}
+
+.site-main hr {
+  margin: 24px 0;
+}
+
 .site-main p,
 .site-main li {
   color: var(--muted);
   font-size: 1.02rem;
-}
-
-.page-home .site-main {
-  overflow: hidden;
 }
 
 .hero-panel {
@@ -216,16 +222,10 @@ body {
   display: none;
 }
 
-.hero-grid,
 .feature-grid,
 .about-grid {
   display: grid;
   gap: 16px;
-}
-
-.hero-grid {
-  grid-template-columns: 1fr;
-  align-items: start;
 }
 
 .eyebrow {
@@ -258,7 +258,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
-  margin: 18px 0 0;
+  margin: 18px 0 8px;
 }
 
 .button-link {
@@ -353,7 +353,7 @@ body {
 }
 
 .project-visual {
-  margin-top: 20px;
+  margin-top: 16px;
 }
 
 .project-visual img {
@@ -438,10 +438,6 @@ iframe {
 @media print, screen and (max-width: 1080px) {
   .site-shell {
     grid-template-columns: 1fr;
-  }
-
-  .site-sidebar {
-    position: static;
   }
 
   .feature-grid,

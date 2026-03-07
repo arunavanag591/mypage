@@ -25,6 +25,22 @@ body_class: page-home
 
 <section data-reveal>
   <div class="section-heading">
+    <h2>Ph.D., Computer Science, University of Nevada, Reno</h2>
+    <p>My doctoral work focused on predictive modeling from large noisy real-world datasets using statistical analysis, machine learning, and deep learning.</p>
+  </div>
+  <article class="section-card">
+    <ul>
+      <li>I developed statistical models and Kalman filtering techniques for real-world dynamical systems on 15 million rows of sensor data, resulting in 82% prediction accuracy. <a href="https://royalsocietypublishing.org/doi/full/10.1098/rsif.2024.0169">RSI, 2024</a>.</li>
+      <li>I built COSMOS, a realistic odor simulator using data-driven probabilistic methods for plume tracing and time-series generation. <a href="https://ieeexplore.ieee.org/abstract/document/11223626">IEEE, 2025</a>.</li>
+      <li>I integrated COSMOS with a physics-enabled Gazebo simulation for UAV odor tracking under wind and gravity constraints.</li>
+    </ul>
+  </article>
+</section>
+
+<hr class="section-divider">
+
+<section data-reveal>
+  <div class="section-heading">
     <h2>Research directions</h2>
     <p>Work that spans biological discovery, data engineering, and quantitative modeling.</p>
   </div>
