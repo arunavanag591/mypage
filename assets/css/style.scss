@@ -201,7 +201,6 @@ body {
   float: none;
   padding-bottom: 0;
   margin: 0;
-  max-width: 860px;
 }
 
 .site-main hr {
@@ -250,7 +249,7 @@ body {
 }
 
 .hero-lead {
-  max-width: 72ch;
+  max-width: none;
   margin: 0 0 14px;
   font-size: 1rem;
 }

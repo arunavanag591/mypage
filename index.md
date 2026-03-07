@@ -17,7 +17,7 @@ body_class: page-home
   </p>
   <div class="hero-actions">
     <a class="button-link" href="{{ site.baseurl }}/publications/">View Publications</a>
-    <a class="button-link secondary" href="{{ site.baseurl }}/resume/">Open CV</a>
+    <a class="button-link secondary" href="{{ site.baseurl }}/resume/">CV</a>
   </div>
 </section>
 
