@@ -16,27 +16,12 @@
     <div class="site-shell">
       <aside class="site-sidebar">
         <a class="brand-lockup" href="{{ "/" | absolute_url }}">
-          <span class="brand-kicker">Computational Spatial Biology</span>
           <h1>{{ site.title | default: site.github.repository_name }}</h1>
         </a>
 
         {% if site.logo %}
           <img class="profile-photo" src="{{site.logo | relative_url}}" alt="{{ site.title }} profile photo" />
         {% endif %}
-
-        <p class="sidebar-summary">{{ site.description | default: site.github.project_tagline }}</p>
-
-        <div class="sidebar-badges">
-          <span>CODEX</span>
-          <span>Spatial Omics</span>
-          <span>Immune Microenvironment</span>
-        </div>
-
-        <nav class="site-nav" aria-label="Primary">
-          <a href="{{ "/" | absolute_url }}">Home</a>
-          <a href="{{ site.baseurl }}/publications/">Publications</a>
-          <a href="{{ site.baseurl }}/resume/">CV</a>
-        </nav>
 
         <div class="sidebar-icons">
           <a href="mailto:arunavan@uchicago.edu" aria-label="Email">
@@ -52,6 +37,20 @@
             <i class="ai ai-google-scholar"></i>
           </a>
         </div>
+
+        <p class="sidebar-summary">{{ site.description | default: site.github.project_tagline }}</p>
+
+        <div class="sidebar-badges">
+          <span>CODEX</span>
+          <span>Spatial Omics</span>
+          <span>Immune Microenvironment</span>
+        </div>
+
+        <nav class="site-nav" aria-label="Primary">
+          <a href="{{ "/" | absolute_url }}">Home</a>
+          <a href="{{ site.baseurl }}/publications/">Publications</a>
+          <a href="{{ site.baseurl }}/resume/">CV</a>
+        </nav>
       </aside>
 
       <main class="site-main">
