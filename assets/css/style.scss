@@ -5,356 +5,308 @@
 
 /* =========================================================================
    Arunava Nag — personal site
-   Theme: Light & airy, Apple-system aesthetic
-   Type:  Fraunces (display serif) + Hanken Grotesk (body / UI)
+   Mood:  Light & airy, Apple-system aesthetic with editorial restraint.
+   Color: Apple system blue accent on near-white. Calm, confident.
+   Type:  Fraunces (display) + Hanken Grotesk (body) — 2 fonts.
+   Layout: frosted sticky nav + asymmetric hero + single-column flow + footer.
    ========================================================================= */
 
 :root {
-  /* Surfaces & ink */
   --bg: #fbfbfd;
-  --bg-2: #eef1f7;
-  --surface: rgba(255, 255, 255, 0.72);
-  --surface-strong: #ffffff;
+  --bg-2: #eef3fb;
+  --surface: #ffffff;
   --ink: #1d1d1f;
-  --muted: #51565f;
-  --faint: #86868b;
-  --line: rgba(20, 30, 45, 0.10);
-  --line-strong: rgba(20, 30, 45, 0.16);
+  --body: #3a3c44;
+  --muted: #5c626e;
+  --faint: #8b909b;
+  --line: rgba(20, 28, 46, 0.10);
+  --line-2: rgba(20, 28, 46, 0.16);
 
   /* Apple system blue */
-  --accent: #0071e3;
-  --accent-press: #0058b0;
-  --accent-ink: #0a4f9c;
-  --accent-soft: rgba(0, 113, 227, 0.10);
-  --accent-soft-2: rgba(0, 113, 227, 0.16);
-  --accent-ring: rgba(0, 113, 227, 0.30);
+  --blue: #0071e3;
+  --blue-press: #0058b0;
+  --blue-ink: #0a5fbf;
+  --blue-soft: rgba(0, 113, 227, 0.10);
+  --blue-soft-2: rgba(0, 113, 227, 0.16);
 
-  /* Radii */
-  --r-xl: 30px;
-  --r-lg: 22px;
-  --r-md: 16px;
-  --r-pill: 980px;
+  --shadow-card: 0 1px 2px rgba(16, 24, 40, 0.04), 0 12px 30px rgba(16, 24, 40, 0.07);
+  --shadow-hover: 0 8px 28px rgba(16, 24, 40, 0.13);
 
-  /* Elevation */
-  --shadow-card: 0 1px 2px rgba(16, 24, 40, 0.04), 0 10px 28px rgba(16, 24, 40, 0.07);
-  --shadow-card-hover: 0 2px 6px rgba(16, 24, 40, 0.06), 0 20px 48px rgba(16, 24, 40, 0.12);
-  --shadow-float: 0 30px 80px rgba(16, 24, 40, 0.14);
+  --font-display: "Fraunces", Georgia, "Times New Roman", serif;
+  --font-sans: "Hanken Grotesk", "Avenir Next", sans-serif;
 
-  /* Type */
-  --font-display: "Fraunces", "Iowan Old Style", Georgia, "Times New Roman", serif;
-  --font-sans: "Hanken Grotesk", "Avenir Next", "Segoe UI", sans-serif;
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
 
-  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --maxw: 1080px;
+  --pad: 32px;
+  --space-section: 72px;
 }
 
 html,
 body {
   margin: 0;
+  padding: 0;
   min-height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--bg);
-  color: var(--ink);
+  color: var(--body);
   font-family: var(--font-sans);
-  font-size: 16px;
-  line-height: 1.7;
-  letter-spacing: -0.003em;
+  font-size: 17px;
+  line-height: 1.72;
+  letter-spacing: -0.002em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 }
 
-/* ---- Atmospheric background: layered gradients, not flat ---- */
+/* Atmospheric backdrop — a single faint blue wash for depth, stays airy. */
 .page-backdrop {
   position: fixed;
   inset: 0;
   z-index: -1;
   background:
-    radial-gradient(46% 40% at 6% -6%, rgba(0, 113, 227, 0.12), transparent 60%),
-    radial-gradient(42% 38% at 102% 2%, rgba(0, 113, 227, 0.08), transparent 58%),
-    radial-gradient(64% 52% at 50% 118%, rgba(0, 113, 227, 0.06), transparent 60%),
-    linear-gradient(180deg, #fdfdff 0%, #f5f8fd 52%, #eaeef6 100%);
+    radial-gradient(40% 30% at 84% -2%, var(--blue-soft), transparent 70%),
+    linear-gradient(180deg, #fdfdff 0%, #fbfbfd 42%, #f4f7fc 100%);
 }
 
-/* ---- Shell ---- */
-.site-shell {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 36px 24px 64px;
-  display: grid;
-  grid-template-columns: 296px minmax(0, 1fr);
-  gap: 28px;
-  align-items: start;
-}
-
-.site-sidebar,
-.site-main {
-  background: var(--surface);
-  border: 1px solid var(--line);
-  box-shadow: var(--shadow-float);
-  backdrop-filter: blur(20px) saturate(140%);
-  -webkit-backdrop-filter: blur(20px) saturate(140%);
-}
-
-.site-sidebar {
-  position: sticky;
-  top: 28px;
-  padding: 30px;
-  border-radius: var(--r-xl);
-}
-
-.site-main {
-  padding: 44px;
-  border-radius: var(--r-xl);
-}
-
-/* ---- Brand / name ---- */
-.brand-lockup,
-.brand-lockup:hover {
-  color: inherit;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.brand-lockup h1 {
-  margin: 0;
-  font-family: var(--font-display);
-  font-weight: 500;
-  font-size: 1.92rem;
-  line-height: 1.04;
-  letter-spacing: -0.025em;
-}
-
-.brand-kicker {
-  display: inline-block;
-  margin-bottom: 8px;
-  color: var(--accent-ink);
-  font-size: 0.78rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-
-.profile-photo {
-  display: block;
-  width: 100%;
-  margin: 18px 0;
-  border-radius: var(--r-md);
-  aspect-ratio: 4 / 5;
-  object-fit: cover;
-  border: 1px solid var(--line);
-  box-shadow: var(--shadow-card);
-  transition: transform 400ms var(--ease), box-shadow 400ms var(--ease);
-}
-
-.profile-photo:hover {
-  transform: translateY(-3px) scale(1.01);
-  box-shadow: var(--shadow-card-hover);
-}
-
-.sidebar-summary {
-  margin: 14px 0 18px;
-  color: var(--muted);
-  font-size: 1rem;
-  line-height: 1.55;
-  white-space: pre-line;
-}
-
-/* ---- Pills (badges, meta, timeline, project links) ---- */
-.sidebar-badges,
-.stat-grid,
-.project-grid,
-.experience-list {
-  display: grid;
-  gap: 12px;
-}
-
-.sidebar-badges {
-  grid-template-columns: 1fr;
-  margin: 4px 0 24px;
-}
-
-.sidebar-badges span,
-.hero-tags span,
-.meta-pill,
-.project-card .project-link,
-.timeline-label {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  width: fit-content;
-  padding: 7px 14px;
-  border-radius: var(--r-pill);
-  background: var(--accent-soft);
-  color: var(--accent-ink);
-  font-size: 0.82rem;
-  font-weight: 600;
-  letter-spacing: 0.01em;
-  text-decoration: none;
-}
-
-/* ---- Sidebar navigation ---- */
-.site-nav {
-  display: grid;
-  gap: 8px;
-  margin-bottom: 4px;
-}
-
-.site-nav a {
-  display: block;
-  padding: 11px 15px;
-  border-radius: 14px;
-  color: var(--ink);
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 0.98rem;
-  background: rgba(255, 255, 255, 0.5);
-  border: 1px solid transparent;
-  transition: transform 200ms var(--ease), border-color 200ms var(--ease), background 200ms var(--ease), color 200ms var(--ease);
-}
-
-.site-nav a:hover {
-  transform: translateX(5px);
-  border-color: var(--accent-soft-2);
-  background: var(--accent-soft);
-  color: var(--accent-ink);
-}
-
-/* ---- Social icons ---- */
-.sidebar-icons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-bottom: 20px;
-}
-
-.sidebar-icons a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 42px;
-  height: 42px;
-  border-radius: 13px;
-  background: rgba(255, 255, 255, 0.85);
-  border: 1px solid var(--line);
-  color: var(--ink);
-  font-size: 1.2rem;
-  text-decoration: none;
-  transition: transform 220ms var(--ease), background 220ms var(--ease), color 220ms var(--ease), box-shadow 220ms var(--ease);
-}
-
-.sidebar-icons a:hover {
-  transform: translateY(-3px);
-  background: var(--accent);
-  color: #fff;
-  box-shadow: 0 10px 22px var(--accent-ring);
-}
-
-/* ---- Main content typography ---- */
-.site-main h1,
-.site-main h2,
-.site-main h3 {
-  color: var(--ink);
-  font-family: var(--font-display);
-  font-weight: 500;
-  letter-spacing: -0.02em;
-}
-
-.site-main section {
+/* =========================================================================
+   Frosted sticky top bar.
+   ========================================================================= */
+.topbar {
+  /* reset leaked jekyll-theme-minimal header rule */
   width: auto;
   float: none;
-  padding-bottom: 0;
-  margin: 0;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(251, 251, 253, 0.72);
+  backdrop-filter: saturate(180%) blur(18px);
+  -webkit-backdrop-filter: saturate(180%) blur(18px);
+  border-bottom: 1px solid var(--line);
 }
 
-.site-main hr {
-  margin: 24px 0;
+.topbar-inner {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 15px var(--pad);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
-.site-main p,
-.site-main li {
+.wordmark {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 1.12rem;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.topnav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.topnav a {
   color: var(--muted);
-  font-size: 1.04rem;
+  font-weight: 500;
+  font-size: 0.92rem;
+  text-decoration: none;
+  transition: color 180ms var(--ease);
 }
 
-/* ---- Hero ---- */
-.hero-panel {
-  position: relative;
+.topnav a:hover {
+  color: var(--ink);
+}
+
+.topnav a.icon {
+  font-size: 1.02rem;
+  line-height: 1;
+}
+
+.topnav a.icon:hover {
+  color: var(--blue);
+}
+
+.topnav-sep {
+  width: 1px;
+  height: 16px;
+  background: var(--line-2);
+  margin: 0 2px;
+}
+
+/* =========================================================================
+   Full-bleed bands — each section is its own full-width visual moment,
+   alternating tone, content centered in an inner max-width container.
+   ========================================================================= */
+.site-main {
+  width: 100%;
+  margin: 0;
   padding: 0;
 }
 
-.hero-panel::after {
-  display: none;
+.band {
+  width: 100%;
+  padding: 92px var(--pad);
+  background: var(--bg);
+}
+
+.band-alt {
+  background: var(--bg-2);
+}
+
+.band-inner {
+  max-width: var(--maxw);
+  margin: 0 auto;
+}
+
+.band-hero {
+  padding-top: 60px;
+  padding-bottom: 84px;
+  background:
+    radial-gradient(48% 40% at 90% -4%, var(--blue-soft), transparent 70%),
+    linear-gradient(180deg, #fdfeff 0%, var(--bg) 70%);
+}
+
+/* Standard pages (publications/resume) don't use bands — constrain them. */
+.page-standard .site-main {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 56px var(--pad) 96px;
+}
+
+/* =========================================================================
+   Hero — asymmetric: statement left, portrait + focus tags right.
+   ========================================================================= */
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.62fr) minmax(0, 0.8fr);
+  gap: 56px;
+  align-items: start;
+}
+
+.hero-text {
+  min-width: 0;
 }
 
 .eyebrow {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 14px;
-  color: var(--accent-ink);
+  display: inline-block;
+  margin-bottom: 18px;
+  color: var(--blue-ink);
   font-family: var(--font-sans);
-  font-size: 0.78rem;
+  font-size: 0.73rem;
   font-weight: 700;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.15em;
   text-transform: uppercase;
 }
 
 .hero-title {
-  margin: 0 0 18px;
-  max-width: 20ch;
-  font-size: unquote("clamp(2rem, 1.2rem + 2.6vw, 2.7rem)");
-  line-height: 1.08;
-  letter-spacing: -0.028em;
+  margin: 0 0 22px;
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: unquote("clamp(1.6rem, 1.15rem + 1.2vw, 1.95rem)");
+  line-height: 1.12;
+  letter-spacing: -0.025em;
+  color: var(--ink);
   overflow-wrap: normal;
 }
 
 .hero-lead {
-  max-width: 62ch;
-  margin: 0 0 14px;
-  font-size: 1.06rem;
-  line-height: 1.72;
+  margin: 0 0 15px;
+  max-width: 56ch;
+  font-size: 1.04rem;
+  line-height: 1.7;
+  color: var(--muted);
 }
 
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
-  margin: 24px 0 8px;
+  margin: 28px 0 4px;
 }
 
-/* ---- Buttons (Apple pill) ---- */
+.hero-aside {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-top: 4px;
+}
+
+.portrait {
+  display: block;
+  width: 100%;
+  max-width: 260px;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 18px;
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-card);
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  max-width: 260px;
+}
+
+.badges span {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: var(--muted);
+  border: 1px solid var(--line);
+  padding: 5px 11px;
+  border-radius: 8px;
+}
+
+/* =========================================================================
+   Buttons — Apple pill: solid blue CTA + ghost secondary.
+   ========================================================================= */
 .button-link {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 13px 24px;
-  border-radius: var(--r-pill);
-  background: var(--accent);
+  padding: 12px 24px;
+  border-radius: 980px;
+  background: var(--blue);
+  border: 1px solid var(--blue);
   color: #fff;
   font-weight: 600;
-  font-size: 0.98rem;
+  font-size: 0.96rem;
   text-decoration: none;
-  transition: transform 200ms var(--ease), background 200ms var(--ease), box-shadow 200ms var(--ease);
-}
-
-.button-link.secondary {
-  background: var(--accent-soft);
-  color: var(--accent-ink);
+  transition: transform 200ms var(--ease), background 200ms var(--ease), border-color 200ms var(--ease), box-shadow 200ms var(--ease);
 }
 
 .button-link:hover {
   transform: translateY(-2px);
-  background: var(--accent-press);
+  background: var(--blue-press);
+  border-color: var(--blue-press);
   color: #fff;
-  box-shadow: 0 12px 26px var(--accent-ring);
+  box-shadow: 0 10px 24px var(--blue-soft-2);
+}
+
+.button-link.secondary {
+  background: transparent;
+  border-color: var(--line-2);
+  color: var(--ink);
 }
 
 .button-link.secondary:hover {
-  background: var(--accent-soft-2);
-  color: var(--accent-ink);
+  background: transparent;
+  border-color: var(--blue);
+  color: var(--blue-ink);
   box-shadow: none;
 }
 
@@ -367,51 +319,89 @@ body {
   text-decoration: none;
 }
 
-/* ---- Cards ---- */
-.hero-card,
+/* =========================================================================
+   Content typography — hierarchy is the design (sizes dialed down).
+   ========================================================================= */
+.site-main h1,
+.site-main h2 {
+  color: var(--ink);
+  font-family: var(--font-display);
+  font-weight: 500;
+  letter-spacing: -0.025em;
+}
+
+.site-main h3 {
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.site-main section {
+  width: auto;
+  float: none;
+  padding-bottom: 0;
+  margin: 0;
+}
+
+.site-main p,
+.site-main li {
+  color: var(--muted);
+  font-size: 1.02rem;
+}
+
+.section-divider,
+.site-main hr {
+  margin: var(--space-section) 0;
+  border: 0;
+  height: 1px;
+  background: var(--line);
+}
+
+.section-heading {
+  margin-bottom: 26px;
+  max-width: 62ch;
+}
+
+.section-heading h2 {
+  margin: 0 0 10px;
+  font-size: unquote("clamp(1.3rem, 1.05rem + 0.85vw, 1.55rem)");
+  line-height: 1.16;
+}
+
+.section-heading p {
+  margin: 0;
+}
+
+/* =========================================================================
+   Cards — soft Apple cards: white fill, hairline, gentle depth, hover lift.
+   ========================================================================= */
 .section-card,
 .project-card,
 .stat-card {
   padding: 24px;
-  border-radius: var(--r-lg);
-  background: var(--surface-strong);
+  border-radius: 18px;
+  background: var(--surface);
   border: 1px solid var(--line);
   box-shadow: var(--shadow-card);
-  transition: transform 280ms var(--ease), box-shadow 280ms var(--ease), border-color 280ms var(--ease);
+  transition: transform 200ms var(--ease), box-shadow 200ms var(--ease), border-color 200ms var(--ease);
 }
 
 .section-card:hover,
 .project-card:hover,
 .stat-card:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-card-hover);
-  border-color: var(--accent-soft-2);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-hover);
+  border-color: var(--line-2);
 }
 
-.hero-card {
-  position: relative;
-  overflow: hidden;
-  max-width: 720px;
-}
-
-.hero-card::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(145deg, var(--accent-soft), transparent 55%);
-  pointer-events: none;
-}
-
-.hero-card h3,
 .section-card h3,
 .project-card h3,
 .stat-card h3 {
-  margin-top: 0;
-  margin-bottom: 12px;
-  font-size: 1.2rem;
+  margin: 0 0 10px;
+  font-size: 1.08rem;
 }
 
-.hero-card ul,
 .section-card ul {
   margin: 0;
   padding-left: 20px;
@@ -423,32 +413,10 @@ body {
 
 .section-card li.project-visual {
   list-style: none;
+  margin: 16px 0 0;
 }
 
-/* ---- Dividers & section headings ---- */
-.section-divider {
-  margin: 40px 0;
-  border: 0;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, var(--line-strong) 18%, var(--line-strong) 82%, transparent);
-}
-
-.section-heading {
-  margin-bottom: 22px;
-}
-
-.section-heading h2 {
-  margin: 0 0 10px;
-  font-size: unquote("clamp(1.45rem, 1rem + 1.4vw, 1.8rem)");
-  line-height: 1.15;
-}
-
-.section-heading p {
-  margin: 0;
-  max-width: 60ch;
-}
-
-/* ---- Grids ---- */
+/* Grids */
 .feature-grid,
 .about-grid {
   display: grid;
@@ -457,7 +425,9 @@ body {
 
 .feature-grid,
 .project-grid {
+  display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
 }
 
 .project-visual {
@@ -468,13 +438,19 @@ body {
   display: block;
   width: 100%;
   max-width: 760px;
-  border-radius: var(--r-md);
+  border-radius: 12px;
   border: 1px solid var(--line);
-  box-shadow: var(--shadow-card);
 }
 
+/* Meta labels — micro-type; the lone blue accent in a card. */
 .meta-pill {
-  margin-bottom: 14px;
+  display: inline-block;
+  margin-bottom: 12px;
+  color: var(--blue-ink);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
 }
 
 .project-card {
@@ -487,55 +463,97 @@ body {
   margin: 0;
 }
 
-.project-card .project-link {
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
   margin-top: auto;
-  transition: background 200ms var(--ease), color 200ms var(--ease);
+  color: var(--ink);
+  font-weight: 600;
+  font-size: 0.94rem;
+  text-decoration: none;
 }
 
-.project-card .project-link:hover {
-  background: var(--accent);
-  color: #fff;
-}
-
-/* ---- Experience list ---- */
+/* =========================================================================
+   Experience — vertical timeline with blue node markers.
+   ========================================================================= */
 .experience-list {
+  display: grid;
   grid-template-columns: 1fr;
   gap: 0;
 }
 
 .experience-item {
-  padding: 22px 0;
-  border-top: 1px solid var(--line);
+  position: relative;
+  padding: 0 0 30px 30px;
 }
 
-.experience-item:first-child {
-  border-top: 0;
-  padding-top: 0;
+.experience-item:last-child {
+  padding-bottom: 0;
+}
+
+.experience-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: var(--surface);
+  border: 2px solid var(--blue);
+  z-index: 1;
+}
+
+.experience-item::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 14px;
+  bottom: -3px;
+  width: 2px;
+  background: var(--line);
+}
+
+.experience-item:last-child::after {
+  display: none;
+}
+
+.timeline-label {
+  display: inline-block;
+  margin-bottom: 8px;
+  color: var(--faint);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
 }
 
 .experience-item h3 {
   margin: 0 0 8px;
-  font-size: 1.16rem;
+  font-size: 1.08rem;
 }
 
 .experience-item p {
   margin: 0;
 }
 
-.timeline-label {
-  margin-bottom: 12px;
-}
-
-/* ---- Standard pages: publications as a reference list ---- */
+/* =========================================================================
+   Standard pages — publications/article/thesis as an editorial reference list.
+   ========================================================================= */
 .page-standard .site-main > h2 {
-  font-size: unquote("clamp(1.5rem, 1.1rem + 1.4vw, 1.9rem)");
-  margin: 0 0 6px;
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: unquote("clamp(1.35rem, 1.1rem + 0.9vw, 1.65rem)");
+  letter-spacing: -0.025em;
+  color: var(--ink);
+  margin: 0 0 8px;
   padding-bottom: 14px;
   border-bottom: 1px solid var(--line);
 }
 
 .page-standard .site-main > h2 ~ h2 {
-  margin-top: 40px;
+  margin-top: var(--space-section);
 }
 
 .page-standard .site-main ol {
@@ -548,34 +566,24 @@ body {
 .page-standard .site-main ol li {
   counter-increment: ref;
   position: relative;
-  padding: 18px 18px 18px 56px;
-  border-radius: var(--r-md);
-  border: 1px solid transparent;
-  transition: background 220ms var(--ease), border-color 220ms var(--ease), transform 220ms var(--ease);
+  padding: 18px 0 18px 48px;
+  border-top: 1px solid var(--line);
+}
+
+.page-standard .site-main ol li:first-child {
+  border-top: 0;
 }
 
 .page-standard .site-main ol li::before {
-  content: counter(ref);
+  content: counter(ref, decimal-leading-zero);
   position: absolute;
-  left: 14px;
-  top: 18px;
-  width: 28px;
-  height: 28px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 9px;
-  background: var(--accent-soft);
-  color: var(--accent-ink);
-  font-size: 0.85rem;
+  left: 0;
+  top: 20px;
+  color: var(--faint);
+  font-size: 0.78rem;
   font-weight: 700;
+  letter-spacing: 0.06em;
   font-variant-numeric: tabular-nums;
-}
-
-.page-standard .site-main ol li:hover {
-  background: rgba(255, 255, 255, 0.7);
-  border-color: var(--line);
-  transform: translateX(3px);
 }
 
 .page-standard .site-main ol li a {
@@ -583,28 +591,37 @@ body {
   line-height: 1.55;
 }
 
-/* ---- Links ---- */
+/* =========================================================================
+   Links — ink text, animated blue underline on hover.
+   ========================================================================= */
 a {
-  color: var(--accent-ink);
+  color: var(--ink);
   text-decoration: none;
 }
 
-a:hover {
-  color: var(--accent-press);
-}
-
 .site-main p a,
-.page-standard .site-main li a {
-  background-image: linear-gradient(var(--accent-ink), var(--accent-ink));
+.site-main li a,
+.topnav a:not(.icon),
+.footer-nav a,
+.project-link {
+  background-image: linear-gradient(var(--blue), var(--blue));
   background-size: 0% 1.5px;
   background-position: 0 100%;
   background-repeat: no-repeat;
-  transition: background-size 280ms var(--ease);
+  padding-bottom: 1px;
+  transition: background-size 220ms var(--ease), color 180ms var(--ease);
 }
 
 .site-main p a:hover,
-.page-standard .site-main li a:hover {
+.site-main li a:hover,
+.topnav a:not(.icon):hover,
+.footer-nav a:hover,
+.project-link:hover {
   background-size: 100% 1.5px;
+}
+
+.project-link:hover {
+  color: var(--blue-ink);
 }
 
 img {
@@ -614,102 +631,97 @@ img {
 
 iframe {
   width: 100%;
-  min-height: 78vh;
-  border: 0;
-  border-radius: var(--r-lg);
-  box-shadow: var(--shadow-card);
+  min-height: 80vh;
+  border: 1px solid var(--line);
+  border-radius: 16px;
 }
 
-/* ---- Focus visibility ---- */
 :focus-visible {
-  outline: 2px solid var(--accent-ring);
+  outline: 2px solid var(--blue);
   outline-offset: 3px;
-  border-radius: 6px;
+  border-radius: 4px;
 }
 
 /* =========================================================================
-   Motion — orchestrated page-load + scroll reveals
+   Footer.
+   ========================================================================= */
+.site-footer {
+  /* reset leaked jekyll-theme-minimal footer rule */
+  width: auto;
+  float: none;
+  position: static;
+  clear: both;
+  border-top: 1px solid var(--line);
+  background: var(--bg-2);
+}
+
+.site-footer-inner {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 36px var(--pad);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  flex-wrap: wrap;
+  color: var(--faint);
+  font-size: 0.85rem;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.footer-nav a {
+  color: var(--muted);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/* =========================================================================
+   Motion — ONE signature: wordmark + hero fade-up on load
+   (name -> title -> tagline, ~80ms apart, 12px). Everything else quiet.
    ========================================================================= */
 @keyframes riseIn {
-  from { opacity: 0; transform: translateY(20px); }
+  from { opacity: 0; transform: translateY(12px); }
   to   { opacity: 1; transform: none; }
 }
 
-@keyframes sideIn {
-  from { opacity: 0; transform: translateX(-18px); }
-  to   { opacity: 1; transform: none; }
+/* Resting state is visible; `backwards` fill shows the hidden from-state only
+   during each element's stagger delay (so content never stays stuck hidden). */
+.wordmark {
+  animation: riseIn 0.55s var(--ease) backwards;
+  animation-delay: 0s;
 }
 
-/* Sidebar entrance — pure CSS, staggered on load */
-.site-sidebar > * {
-  opacity: 0;
-  animation: riseIn 0.62s var(--ease) forwards;
+.hero-text > *,
+.hero-aside {
+  animation: riseIn 0.55s var(--ease) backwards;
 }
-.site-sidebar > *:nth-child(1) { animation-delay: 0.10s; }
-.site-sidebar > *:nth-child(2) { animation-delay: 0.17s; }
-.site-sidebar > *:nth-child(3) { animation-delay: 0.24s; }
-.site-sidebar > *:nth-child(4) { animation-delay: 0.31s; }
-.site-sidebar > *:nth-child(5) { animation-delay: 0.38s; }
-.site-sidebar > *:nth-child(6) { animation-delay: 0.45s; }
+.hero-text > *:nth-child(1) { animation-delay: 0.08s; }  /* eyebrow */
+.hero-text > *:nth-child(2) { animation-delay: 0.16s; }  /* title   */
+.hero-text > *:nth-child(3) { animation-delay: 0.24s; }  /* tagline */
+.hero-text > *:nth-child(4) { animation-delay: 0.30s; }
+.hero-text > *:nth-child(5) { animation-delay: 0.36s; }
+.hero-text > *:nth-child(6) { animation-delay: 0.42s; }
+.hero-aside { animation-delay: 0.22s; }
 
-/* Section-level scroll reveal (added by JS) */
+/* Quiet scroll reveal for sections below the fold (JS adds the classes). */
 .reveal-ready {
   opacity: 0;
-  transform: translateY(28px);
-  transition: opacity 650ms var(--ease), transform 650ms var(--ease);
+  transform: translateY(12px);
+  transition: opacity 0.5s var(--ease), transform 0.5s var(--ease);
 }
 
 .reveal-ready.is-visible {
   opacity: 1;
-  transform: translateY(0);
-}
-
-/* Hero: parent fades, children stagger (only when JS-driven reveal is active) */
-.hero-panel.reveal-ready {
   transform: none;
 }
 
-.hero-panel.reveal-ready > * {
-  opacity: 0;
-}
-
-.hero-panel.is-visible > * {
-  animation: riseIn 0.66s var(--ease) forwards;
-}
-.hero-panel.is-visible > *:nth-child(1) { animation-delay: 0.06s; }
-.hero-panel.is-visible > *:nth-child(2) { animation-delay: 0.14s; }
-.hero-panel.is-visible > *:nth-child(3) { animation-delay: 0.22s; }
-.hero-panel.is-visible > *:nth-child(4) { animation-delay: 0.30s; }
-.hero-panel.is-visible > *:nth-child(5) { animation-delay: 0.38s; }
-.hero-panel.is-visible > *:nth-child(6) { animation-delay: 0.46s; }
-
-/* Card stagger within revealed grids */
-.reveal-ready .feature-grid > *,
-.reveal-ready .project-grid > *,
-.reveal-ready .experience-list > * {
-  opacity: 0;
-}
-
-.is-visible .feature-grid > *,
-.is-visible .project-grid > *,
-.is-visible .experience-list > * {
-  animation: riseIn 0.6s var(--ease) forwards;
-}
-.is-visible .feature-grid > *:nth-child(1),
-.is-visible .project-grid > *:nth-child(1),
-.is-visible .experience-list > *:nth-child(1) { animation-delay: 0.08s; }
-.is-visible .feature-grid > *:nth-child(2),
-.is-visible .project-grid > *:nth-child(2),
-.is-visible .experience-list > *:nth-child(2) { animation-delay: 0.16s; }
-.is-visible .feature-grid > *:nth-child(3),
-.is-visible .project-grid > *:nth-child(3),
-.is-visible .experience-list > *:nth-child(3) { animation-delay: 0.24s; }
-.is-visible .feature-grid > *:nth-child(4),
-.is-visible .project-grid > *:nth-child(4),
-.is-visible .experience-list > *:nth-child(4) { animation-delay: 0.32s; }
-
-/* Respect reduced-motion */
 @media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
   *,
   *::before,
   *::after {
@@ -717,11 +729,9 @@ iframe {
     animation-delay: 0ms !important;
     transition-duration: 0.001ms !important;
   }
-  .site-sidebar > *,
-  .hero-panel.reveal-ready > *,
-  .reveal-ready .feature-grid > *,
-  .reveal-ready .project-grid > *,
-  .reveal-ready .experience-list > *,
+  .wordmark,
+  .hero-text > *,
+  .hero-aside,
   .reveal-ready {
     opacity: 1 !important;
     transform: none !important;
@@ -731,15 +741,28 @@ iframe {
 /* =========================================================================
    Responsive
    ========================================================================= */
-@media print, screen and (max-width: 1080px) {
-  .site-shell {
+@media print, screen and (max-width: 860px) {
+  .hero {
     grid-template-columns: 1fr;
-    gap: 22px;
+    gap: 26px;
+    padding: 44px 0 4px;
   }
 
-  .site-sidebar {
-    position: static;
-    top: auto;
+  .hero-aside {
+    order: -1;
+    flex-direction: row;
+    align-items: center;
+    gap: 18px;
+    padding-top: 0;
+  }
+
+  .portrait {
+    max-width: 118px;
+    border-radius: 14px;
+  }
+
+  .badges {
+    max-width: none;
   }
 
   .feature-grid,
@@ -751,27 +774,26 @@ iframe {
 }
 
 @media print, screen and (max-width: 680px) {
-  .site-shell {
-    padding: 18px 16px 40px;
-    gap: 18px;
+  :root {
+    --pad: 20px;
+    --space-section: 52px;
   }
 
-  .site-sidebar,
-  .site-main {
-    padding: 24px;
-    border-radius: var(--r-lg);
+  .topbar-inner {
+    gap: 12px 16px;
   }
 
-  .brand-lockup h1 {
-    font-size: 1.8rem;
-  }
-
-  .hero-actions {
-    gap: 10px;
+  .topnav {
+    gap: 15px;
   }
 
   .button-link {
     flex: 1 1 auto;
     justify-content: center;
+  }
+
+  .site-footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }

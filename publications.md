@@ -17,6 +17,10 @@ body_class: page-standard
 4. [Howell, J., Nag, A., McKnight, M., Narsipur, S., & Adelegan, O. (2015, March). "A low-power wearable substance monitoring device." In 2015 IEEE Virtual Conference on Applications of Commercial Sensors (VCACS) (pp. 1-9). IEEE.](https://ieeexplore.ieee.org/abstract/document/7439567)
 
 
+## Article
+1. ["Spatial immune cells profiling detects disease-specific immune microenvironment in IgG4-related kidney disease" (WCN26-3745).](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=veJS5XcAAAAJ&citation_for_view=veJS5XcAAAAJ:Se3iqnhoufwC) Kidney International Reports.
+
+
 ## Thesis
 1. [Ph.D.-Thesis, UNR, "The Invisible Landscape: Statistical Characterization and Simulation of Large-Scale Outdoor Odor Plumes."](https://shorturl.at/JU010)
 
