@@ -47,6 +47,10 @@
       </div>
     </footer>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+    {% if page.body_class == "page-home" %}
+    <script src="{{ "/assets/js/hero-graph.js" | relative_url }}"></script>
+    <script src="{{ "/assets/js/home-motion.js" | relative_url }}"></script>
+    {% endif %}
     <script>
       document.querySelectorAll("[data-reveal]").forEach(function (element) {
         element.classList.add("reveal-ready");

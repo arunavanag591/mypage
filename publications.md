@@ -18,7 +18,7 @@ body_class: page-standard
 
 
 ## Article
-1. ["Spatial immune cells profiling detects disease-specific immune microenvironment in IgG4-related kidney disease" (WCN26-3745).](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=veJS5XcAAAAJ&citation_for_view=veJS5XcAAAAJ:Se3iqnhoufwC) Kidney International Reports.
+1. ["Spatial immune cells profiling detects disease-specific immune microenvironment in IgG4-related kidney disease" (WCN26-3745).](<https://www.kireports.org/article/S2468-0249(26)01601-3/fulltext>) Kidney International Reports.
 
 
 ## Thesis
