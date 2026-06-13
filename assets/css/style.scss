@@ -803,6 +803,204 @@ body {
 }
 
 /* =========================================================================
+   CV — native rendering of the résumé (replaces the Drive PDF embed).
+   Mirrors the PDF's structure on a document-like white sheet: centered name +
+   contact line, uppercase section headings with a full-width rule, bold titles
+   with right-aligned dates, bullet lists, and right-aligned GPAs in Education.
+   ========================================================================= */
+.cv-actions {
+  max-width: 820px;
+  margin: 0 auto 18px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cv-actions .button-link i {
+  margin-right: 8px;
+}
+
+.cv {
+  max-width: 820px;
+  margin: 0 auto;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  box-shadow: var(--shadow-card);
+  padding: 56px unquote("clamp(28px, 4vw, 64px)");
+}
+
+.cv-head {
+  /* reset leaked jekyll-theme-minimal header rule (fixed/float/270px) */
+  width: auto;
+  float: none;
+  position: static;
+  text-align: center;
+  padding-bottom: 22px;
+  border-bottom: 1px solid var(--line);
+}
+
+.site-main .cv-name {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: unquote("clamp(1.7rem, 1.3rem + 1.6vw, 2.2rem)");
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+
+.site-main .cv-contact {
+  margin: 10px 0 0;
+  font-size: 0.92rem;
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.cv-contact span:not(:last-child)::after {
+  content: "|";
+  margin: 0 0.55em;
+  color: var(--line-2);
+}
+
+.site-main .cv-contact a {
+  color: var(--ink);
+  font-weight: 500;
+}
+
+.cv-section {
+  margin-top: 32px;
+}
+
+.cv-section > h2 {
+  margin: 0 0 14px;
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.10em;
+  text-transform: uppercase;
+  color: var(--ink);
+  padding-bottom: 7px;
+  border-bottom: 1.5px solid var(--ink);
+}
+
+.cv-entry {
+  margin-top: 16px;
+}
+
+.cv-entry:first-of-type {
+  margin-top: 0;
+}
+
+.cv-entry-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 14px;
+}
+
+.site-main .cv-entry-title {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: 1.02rem;
+  letter-spacing: 0;
+  color: var(--ink);
+}
+
+.cv-entry-date {
+  flex: none;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.site-main .cv-list {
+  list-style: none;
+  margin: 8px 0 0;
+  padding: 0;
+}
+
+.site-main .cv-list li {
+  position: relative;
+  padding: 3px 0 3px 1.3em;
+  color: var(--body);
+  font-size: 0.96rem;
+  line-height: 1.6;
+}
+
+.cv-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0.3em;
+  top: 3px;
+  color: var(--ink);
+}
+
+.cv-list strong {
+  color: var(--ink);
+}
+
+.cv-skills {
+  color: var(--muted);
+}
+
+.site-main .cv-edu li {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1.2em;
+}
+
+.cv-gpa {
+  flex: none;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+@media (max-width: 620px) {
+  .cv {
+    padding: 36px 22px;
+  }
+
+  .cv-entry-head {
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .cv-entry-date {
+    font-size: 0.85rem;
+  }
+}
+
+@media print {
+  .topbar,
+  .site-footer,
+  .cv-actions,
+  .page-backdrop {
+    display: none !important;
+  }
+
+  .page-standard .site-main {
+    max-width: none;
+    padding: 0;
+  }
+
+  .cv {
+    max-width: none;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0;
+  }
+
+  body {
+    background: #fff;
+  }
+}
+
+/* =========================================================================
    Links — ink text, animated blue underline on hover.
    ========================================================================= */
 a {
