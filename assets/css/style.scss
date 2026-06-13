@@ -835,8 +835,6 @@ body {
   float: none;
   position: static;
   text-align: center;
-  padding-bottom: 22px;
-  border-bottom: 1px solid var(--line);
 }
 
 .site-main .cv-name {
@@ -844,8 +842,7 @@ body {
   font-family: var(--font-sans);
   font-weight: 700;
   font-size: unquote("clamp(1.7rem, 1.3rem + 1.6vw, 2.2rem)");
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
+  letter-spacing: 0.01em;
   color: var(--ink);
 }
 
@@ -863,12 +860,12 @@ body {
 }
 
 .site-main .cv-contact a {
-  color: var(--ink);
+  color: var(--blue-ink);
   font-weight: 500;
 }
 
-.cv-section {
-  margin-top: 32px;
+.site-main .cv-section {
+  margin-top: 42px;
 }
 
 .cv-section > h2 {

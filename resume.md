@@ -14,7 +14,7 @@ body_class: page-standard
   <header class="cv-head">
     <h1 class="cv-name">Arunava Nag</h1>
     <p class="cv-contact">
-      <span>Email: <a href="mailto:Arunava.nag@bsd.uchicago.edu">Arunava.nag@bsd.uchicago.edu</a></span>
+      <span>Email: <a href="mailto:arunava.nag@bsd.uchicago.edu">arunava.nag@bsd.uchicago.edu</a></span>
       <span>Phone: <a href="tel:+17754378668">7754378668</a></span>
       <span>Linkedin: <a href="https://linkedin.com/in/arunavanag/" target="_blank" rel="noreferrer">arunavanag</a></span>
       <span>Github: <a href="https://github.com/arunavanag591" target="_blank" rel="noreferrer">arunavanag591</a></span>
