@@ -306,7 +306,9 @@ body {
 
 .hero-lead {
   margin: 0 0 15px;
-  max-width: 56ch;
+  /* match the heading's longest-line width so paragraph right edges align with
+     the title rather than running into the portrait column */
+  max-width: 38rem;
   font-size: 1.04rem;
   line-height: 1.7;
   color: var(--muted);
