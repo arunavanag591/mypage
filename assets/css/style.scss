@@ -882,6 +882,13 @@ body {
   border-bottom: 1.5px solid var(--ink);
 }
 
+.site-main .cv-summary {
+  margin: 0;
+  color: var(--body);
+  font-size: 0.98rem;
+  line-height: 1.7;
+}
+
 .cv-entry {
   margin-top: 16px;
 }
